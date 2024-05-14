@@ -1,8 +1,12 @@
 <div class="flex w-full flex-col justify-center justify-items-center">
-  <h1 class="text-center"><%= @location.display_name%></h1>
-  <p class="text-center">Max Temp(F): <%= @weather.temp_max_f %></p>
-  <p class="text-center">Current Temp(F): <%= @weather.temp_f %></p>
-  <p class="text-center">Min Temp(F): <%= @weather.temp_min_f %></p>
+  <h1 class="text-center"><%= @weather_service.location.display_name%></h1>
+  <br />
+  <p class="text-center">Max Temp(F): <%= @weather_service.weather.temp_max_f %></p>
+  <p class="text-center">Current Temp(F): <%= @weather_service.weather.temp_f %></p>
+  <p class="text-center">Min Temp(F): <%= @weather_service.weather.temp_min_f %></p>
+  <% if @weather_service.cached %>
+    <p class="text-center">(These temperatures were cached.)</p>
+  <% end %>
   <br />
   <%= link_to 'Search Again', root_path, class: 'btn text-center' %>
 </div>

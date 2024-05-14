@@ -29,9 +29,9 @@ RSpec.describe "Weathers", type: :request do
 
         it "displays the weather for the address" do
           expect(response.body).to include('Apple Union Square, 300, Post Street, Union Square, San Francisco, California, 94108')
-          expect(response.body).to include('76.24')
-          expect(response.body).to include('58.28')
-          expect(response.body).to include('52.29')
+          expect(response.body).to include('70.99')
+          expect(response.body).to include('56.41')
+          expect(response.body).to include('51.31')
         end
       end
 
