@@ -77,3 +77,7 @@ group :development do
   gem "pry-rails", "~> 0.3.9"
   gem "pry", "~> 0.14.2"
 end
+
+gem "vcr", "~> 6.2"
+
+gem "webmock", "~> 3.23"
