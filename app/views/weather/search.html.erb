@@ -1,6 +1,8 @@
 <div class="flex w-full flex-col justify-center justify-items-center">
   <h1 class="text-center"><%= @location.display_name%></h1>
-  <p class="text-center">Temperature(F): <%= @temp %></p>
+  <p class="text-center">Max Temp(F): <%= @weather.temp_max_f %></p>
+  <p class="text-center">Current Temp(F): <%= @weather.temp_f %></p>
+  <p class="text-center">Min Temp(F): <%= @weather.temp_min_f %></p>
   <br />
   <%= link_to 'Search Again', root_path, class: 'btn text-center' %>
 </div>

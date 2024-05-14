@@ -17,7 +17,7 @@ class WeatherController < ApplicationController
       lon: @location.longitude
     )
     if @weather['cod'] == 200
-      @temp = @weather['main'].temp_f
+      @weather = @weather['main']
     else
       flash[:alert] = 'There was a problem retrieving the weather. Please try again.'
       render :home
