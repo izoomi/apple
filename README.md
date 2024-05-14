@@ -1,24 +1,46 @@
-# README
+# Apple Rails Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requirements:
+- Must be done in Ruby on Rails
+- Accept an address as input
+- Retrieve forecast data for the given address. This should include, at minimum, the
+current temperature (Bonus points - Retrieve high/low and/or extended forecast)
+- Display the requested forecast details to the user
+-  Cache the forecast details for 30 minutes for all subsequent requests by zip codes.
+- Display indicator if result is pulled from cache.
 
-Things you may want to cover:
+Assumptions:
+- This project is open to interpretation
+- Functionality is a priority over form
+- If you get stuck, complete as much as you can
 
-* Ruby version
+Submission:
+- Use a public source code repository (GitHub, etc) to store your code
+- Send us the link to your completed code
 
-* System dependencies
+## Description
 
-* Configuration
+This project pulls from Open Weather API (using a key found online) and uses the `geocoder` gem.
 
-* Database creation
 
-* Database initialization
+## Getting started
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+- Ruby
 
-* Deployment instructions
+### Install
 
-* ...
+run `bundle install` to install gems.
+normally would use a .env file for API key but this one was found online.
+
+### Usage
+
+- run the rails server: `rails s`
+- enter a valid address and hit search
+- will display current temp, along with high and low
+- cache by zip code
+
+### Testing
+
+`bundle exec rspec spec`
