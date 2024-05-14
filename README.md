@@ -20,7 +20,7 @@ Submission:
 
 ## Description
 
-This project pulls from Open Weather API (using a key found online) and uses the `geocoder` gem.
+This project pulls from Open Weather API and uses the `geocoder` gem.
 
 
 ## Getting started
