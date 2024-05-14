@@ -1,0 +1,9 @@
+<div class="flex w-full flex-col justify-center justify-items-center">
+  <h3 class="text-center">Search Weather</h3>
+  <%= form_with url: "weather/search", method: :get do |form| %>
+    <div class="flex flex-col">
+      <%= form.text_field :address, placeholder: "Address", class: "p-2 m-2" %>
+      <%= form.submit "Search", class: "p-2 m-2 bg-blue-500 text-white" %>
+    </div>
+  <% end %>
+<div>

@@ -1,4 +1,24 @@
 class WeatherController < ApplicationController
-  def show
+  def home
+  end
+
+  def search
+    # geocode with Geocoder gem by address
+    @location = Geocoder.search(params[:address]).first
+    if @location.nil?
+      render :home, alert: 'There was a problem with your search. Please try again.' and return
+    end
+    client = OpenWeather::Client.new(
+      api_key: 'bd5e378503939ddaee76f12ad7a97608'
+    )
+    @weather = client.current_weather(
+      lat: @location.latitude,
+      lon: @location.longitude
+    )
+    if @weather['cod'] == 200
+      @temp = @weather['main'].temp_f
+    else
+      render :home, alert: 'There was a problem with your search. Please try again.'
+    end
   end
 end

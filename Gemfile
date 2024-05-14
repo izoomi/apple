@@ -66,12 +66,14 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
+  gem "rspec-rails", "~> 6.1"
 end
 
-gem "rspec-rails", "~> 6.1"
-
 gem "tailwindcss-rails", "~> 2.6"
-
 gem "geocoder", "~> 1.8"
-
 gem "open-weather-ruby-client", "~> 0.4.0"
+
+group :development do
+  gem "pry-rails", "~> 0.3.9"
+  gem "pry", "~> 0.14.2"
+end
