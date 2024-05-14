@@ -17,7 +17,7 @@ RSpec.describe "WeatherService", type: :service do
 
   describe "get_weather!", :vcr do
     it "fetches the weather" do
-      expect(weather_service.client).to receive(:current_zip).with('94108').and_call_original
+      expect(weather_service.client).to receive(:current_zip).with('94108', 'us').and_call_original
       weather_service.get_weather!
       expect(weather_service.instance_variable_get(:@weather_result)['cod']).to eq(200)
     end
@@ -59,9 +59,9 @@ RSpec.describe "WeatherService", type: :service do
   describe "weather", :vcr do
     it "returns the weather" do
       weather_service.get_weather!
-      expect(weather_service.weather.temp_f).to eq(56.07)
-      expect(weather_service.weather.temp_min_f).to eq(51.31)
-      expect(weather_service.weather.temp_max_f).to eq(71.06)
+      expect(weather_service.weather.temp_f).to eq(52.43)
+      expect(weather_service.weather.temp_min_f).to eq(48.99)
+      expect(weather_service.weather.temp_max_f).to eq(58.71)
     end
   end
 end

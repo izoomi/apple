@@ -13,9 +13,9 @@ class WeatherService
 
   def get_weather!
     @cached = true
-    @weather_result = Rails.cache.fetch("postal_code/#{@location.postal_code}", expires_in: 30.minutes) do
+    @weather_result = Rails.cache.fetch("postal_code/#{@location.country_code}/#{@location.postal_code}", expires_in: 30.minutes) do
       @cached = false
-      client.current_zip(@location.postal_code)
+      client.current_zip(@location.postal_code, @location.country_code)
     end
   end
 

@@ -2,41 +2,6 @@
 http_interactions:
 - request:
     method: get
-    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=300%20Post%20St,%20San%20Francisco,%20CA%2094108
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Server:
-      - nginx
-      Date:
-      - Tue, 14 May 2024 02:03:28 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '1442'
-      Connection:
-      - keep-alive
-      Keep-Alive:
-      - timeout=20
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        W3sicGxhY2VfaWQiOjMxMTkxNTA2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzMyMjIzNDgwLCJsYXQiOiIzNy43ODg2NzI4NSIsImxvbiI6Ii0xMjIuNDA3MTYzMDk5ODY1MSIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJlbGVjdHJvbmljcyIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo5Ljk5OTk5OTk5OTk1NDQ5ZS0wNiwiYWRkcmVzc3R5cGUiOiJzaG9wIiwibmFtZSI6IkFwcGxlIFVuaW9uIFNxdWFyZSIsImRpc3BsYXlfbmFtZSI6IkFwcGxlIFVuaW9uIFNxdWFyZSwgMzAwLCBQb3N0IFN0cmVldCwgVW5pb24gU3F1YXJlLCBTYW4gRnJhbmNpc2NvLCBDYWxpZm9ybmlhLCA5NDEwOCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkFwcGxlIFVuaW9uIFNxdWFyZSIsImhvdXNlX251bWJlciI6IjMwMCIsInJvYWQiOiJQb3N0IFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJVbmlvbiBTcXVhcmUiLCJjaXR5IjoiU2FuIEZyYW5jaXNjbyIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk0MTA4IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy43ODg1MzU5IiwiMzcuNzg4ODA4OSIsIi0xMjIuNDA3Mzc2NiIsIi0xMjIuNDA2OTUwMCJdfSx7InBsYWNlX2lkIjozNDQwMjYwMDcsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjQxNzk0NzEzNSwibGF0IjoiMzcuNzg4NTYxIiwibG9uIjoiLTEyMi40MDY5NDEiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InBsYWNlIiwibmFtZSI6IiIsImRpc3BsYXlfbmFtZSI6IjMwMCwgUG9zdCBTdHJlZXQsIFVuaW9uIFNxdWFyZSwgU2FuIEZyYW5jaXNjbywgQ2FsaWZvcm5pYSwgOTQxMDgsIFVuaXRlZCBTdGF0ZXMiLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjMwMCIsInJvYWQiOiJQb3N0IFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJVbmlvbiBTcXVhcmUiLCJjaXR5IjoiU2FuIEZyYW5jaXNjbyIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk0MTA4IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy43ODg1MTEwIiwiMzcuNzg4NjExMCIsIi0xMjIuNDA2OTkxMCIsIi0xMjIuNDA2ODkxMCJdfV0=
-  recorded_at: Tue, 14 May 2024 02:03:28 GMT
-- request:
-    method: get
     uri: https://api.openweathermap.org/data/2.5/weather?appid=bd5e378503939ddaee76f12ad7a97608&zip=94108
     body:
       encoding: US-ASCII
@@ -79,4 +44,83 @@ http_interactions:
         clouds","icon":"02d"}],"base":"stations","main":{"temp":286.52,"feels_like":286.11,"temp_min":283.88,"temp_max":294.85,"pressure":1013,"humidity":84},"visibility":10000,"wind":{"speed":7.2,"deg":290},"clouds":{"all":20},"dt":1715652035,"sys":{"type":2,"id":2007646,"country":"US","sunrise":1715605261,"sunset":1715656264},"timezone":-25200,"id":0,"name":"San
         Francisco","cod":200}'
   recorded_at: Tue, 14 May 2024 02:03:29 GMT
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=300%20Post%20St,%20San%20Francisco,%20CA%2094108
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 May 2024 15:25:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1537'
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjMxMTkxNTA2NSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwOi8vb3NtLm9yZy9jb3B5cmlnaHQiLCJvc21fdHlwZSI6IndheSIsIm9zbV9pZCI6MzMyMjIzNDgwLCJsYXQiOiIzNy43ODg2NzI4NSIsImxvbiI6Ii0xMjIuNDA3MTYzMDk5ODY1MSIsImNsYXNzIjoic2hvcCIsInR5cGUiOiJlbGVjdHJvbmljcyIsInBsYWNlX3JhbmsiOjMwLCJpbXBvcnRhbmNlIjo4LjI1MTM5MjM4NTc0MzUyM2UtMDUsImFkZHJlc3N0eXBlIjoic2hvcCIsIm5hbWUiOiJBcHBsZSBVbmlvbiBTcXVhcmUiLCJkaXNwbGF5X25hbWUiOiJBcHBsZSBVbmlvbiBTcXVhcmUsIDMwMCwgUG9zdCBTdHJlZXQsIFVuaW9uIFNxdWFyZSwgRmluYW5jaWFsIERpc3RyaWN0LCBTYW4gRnJhbmNpc2NvLCBDYWxpZm9ybmlhLCA5NDEwOCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsic2hvcCI6IkFwcGxlIFVuaW9uIFNxdWFyZSIsImhvdXNlX251bWJlciI6IjMwMCIsInJvYWQiOiJQb3N0IFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJVbmlvbiBTcXVhcmUiLCJzdWJ1cmIiOiJGaW5hbmNpYWwgRGlzdHJpY3QiLCJjaXR5IjoiU2FuIEZyYW5jaXNjbyIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsIklTTzMxNjYtMi1sdmw0IjoiVVMtQ0EiLCJwb3N0Y29kZSI6Ijk0MTA4IiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9LCJib3VuZGluZ2JveCI6WyIzNy43ODg1MzU5IiwiMzcuNzg4ODA4OSIsIi0xMjIuNDA3Mzc2NiIsIi0xMjIuNDA2OTUwMCJdfSx7InBsYWNlX2lkIjozNDQwMjYwMDcsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjQxNzk0NzEzNSwibGF0IjoiMzcuNzg4NTYxIiwibG9uIjoiLTEyMi40MDY5NDEiLCJjbGFzcyI6InBsYWNlIiwidHlwZSI6ImhvdXNlIiwicGxhY2VfcmFuayI6MzAsImltcG9ydGFuY2UiOjkuOTk5OTk5OTk5OTU0NDllLTA2LCJhZGRyZXNzdHlwZSI6InBsYWNlIiwibmFtZSI6IiIsImRpc3BsYXlfbmFtZSI6IjMwMCwgUG9zdCBTdHJlZXQsIFVuaW9uIFNxdWFyZSwgU291dGggb2YgTWFya2V0LCBTYW4gRnJhbmNpc2NvLCBDYWxpZm9ybmlhLCA5NDEwOCwgVW5pdGVkIFN0YXRlcyIsImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMzAwIiwicm9hZCI6IlBvc3QgU3RyZWV0IiwibmVpZ2hib3VyaG9vZCI6IlVuaW9uIFNxdWFyZSIsInN1YnVyYiI6IlNvdXRoIG9mIE1hcmtldCIsImNpdHkiOiJTYW4gRnJhbmNpc2NvIiwic3RhdGUiOiJDYWxpZm9ybmlhIiwiSVNPMzE2Ni0yLWx2bDQiOiJVUy1DQSIsInBvc3Rjb2RlIjoiOTQxMDgiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn0sImJvdW5kaW5nYm94IjpbIjM3Ljc4ODUxMTAiLCIzNy43ODg2MTEwIiwiLTEyMi40MDY5OTEwIiwiLTEyMi40MDY4OTEwIl19XQ==
+  recorded_at: Tue, 14 May 2024 15:25:38 GMT
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=bd5e378503939ddaee76f12ad7a97608&zip=94108,us
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      Content-Type:
+      - application/json
+      User-Agent:
+      - OpenWeather Ruby Client/0.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Tue, 14 May 2024 15:25:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '495'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?zip=94108%2cus"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":-122.4079,"lat":37.7929},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04d"}],"base":"stations","main":{"temp":284.5,"feels_like":283.99,"temp_min":282.59,"temp_max":287.99,"pressure":1013,"humidity":88},"visibility":10000,"wind":{"speed":4.02,"deg":225,"gust":4.92},"clouds":{"all":100},"dt":1715700129,"sys":{"type":2,"id":2007646,"country":"US","sunrise":1715691610,"sunset":1715742718},"timezone":-25200,"id":0,"name":"San
+        Francisco","cod":200}'
+  recorded_at: Tue, 14 May 2024 15:25:38 GMT
 recorded_with: VCR 6.2.0
